@@ -273,12 +273,12 @@
                <div class="====" id="index.xml-body.1_div.3_div.3_div.1">
                   <h3><span class="headingNumber">3.3.1. </span><span class="head">句読点</span></h3>
                   <div class="p">TEIでは、引用符や行末のハイフンなど、XMLタグを使用して符号化できる句読点や記号を、転記されたテキストからは削除する選択も用意されているが、符号化テキストを元の文書と同じように表示することを容易にするために、これらはXML文字データとして残しておくことが推奨される。たとえば次の例。 
-                     <div id="index.xml-egXML-w14661409aab7ab2b3b3b1b1" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>When she said <span class="element">&lt;said&gt;</span>“Nobody uses the term
+                     <div id="index.xml-egXML-w14670501aab7ab2b3b3b1b1" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>When she said <span class="element">&lt;said&gt;</span>“Nobody uses the term
                          <span class="element">&lt;mentioned&gt;</span>‘electronic text’<span class="element">&lt;/mentioned&gt;</span> anymore”<span class="element">&lt;/said&gt;</span>
                          he nearly passed out!<span class="element">&lt;/p&gt;</span></div> ヘッダーの <span class="gi">&lt;quotation&gt;</span> 要素を使用して引用符が削除されたかどうかを記録し、同じくヘッダーの <span class="gi">&lt;punctuation&gt;</span> 要素を使用してその他の句読点が削除されたかどうかを記録する。
                   </div>
                   <div class="p">元の文書内での表示を符号化においても保持する価値がある句読点を削除する場合は、 <span class="att">style</span> 属性をしかるべき要素で使用して、削除された句読点を記述する。たとえば次のように指定する。 
-                     <div id="index.xml-egXML-w14661409aab7ab2b3b3b2b3" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>When she said <span class="element">&lt;said <span class="attribute">style</span>="<span class="attributevalue">quotes: '“' '”'</span>"&gt;</span>Nobody uses the term
+                     <div id="index.xml-egXML-w14670501aab7ab2b3b3b2b3" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>When she said <span class="element">&lt;said <span class="attribute">style</span>="<span class="attributevalue">quotes: '“' '”'</span>"&gt;</span>Nobody uses the term
                          <span class="element">&lt;mentioned <span class="attribute">rend</span>="<span class="attributevalue">quotes: '‘' '’'</span>"&gt;</span>electronic text<span class="element">&lt;/mentioned&gt;</span> anymore<span class="element">&lt;/said&gt;</span>
                          he nearly passed out!<span class="element">&lt;/p&gt;</span></div>
                   </div>
@@ -307,21 +307,21 @@
                         </tr>
                         <tr>
                            <td>ハード・ハイフン</td>
-                           <td><pre id="index.xml-eg-w14661409aab7ab2b3b4b6b5b1b1a" class="pre_eg cdata">This is not a run- on sentence. <a href="#index.xml-eg-w14661409aab7ab2b3b4b6b5b1b1a" class="anchorlink">⚓</a></pre></td>
+                           <td><pre id="index.xml-eg-w14670501aab7ab2b3b4b6b5b1b1a" class="pre_eg cdata">This is not a run- on sentence. <a href="#index.xml-eg-w14670501aab7ab2b3b4b6b5b1b1a" class="anchorlink">⚓</a></pre></td>
                            <td><code>This is not a run&lt;pc force="weak"&gt;-&lt;/pc&gt;&lt;lb break="no"/&gt;on sentence. </code></td>
                            <td><span class="att">force</span> の値に <span class="val">weak</span> を使用すると、"run-on" は正書法上ひとつに綴るべきかたまりであり、ハイフンは語の境目を示すものでなはい、と符号化従事者が考えていることを示す。同様に <span class="att">break</span> の値に <span class="val">no</span> を使用すると、行をまたぐことにより分割された正書法上ひとつのかたまり（単一の語）の中で、改行が行われていることを示す。
                            </td>
                         </tr>
                         <tr>
                            <td>ハード・ハイフン</td>
-                           <td><pre id="index.xml-eg-w14661409aab7ab2b3b4b6b5b2b1a" class="pre_eg cdata">This is not a run- on sentence. <a href="#index.xml-eg-w14661409aab7ab2b3b4b6b5b2b1a" class="anchorlink">⚓</a></pre></td>
+                           <td><pre id="index.xml-eg-w14670501aab7ab2b3b4b6b5b2b1a" class="pre_eg cdata">This is not a run- on sentence. <a href="#index.xml-eg-w14670501aab7ab2b3b4b6b5b2b1a" class="anchorlink">⚓</a></pre></td>
                            <td><code>This is not a run&lt;pc force="strong"&gt;-&lt;/pc&gt;&lt;lb break="yes"/&gt;on sentence. </code></td>
                            <td><span class="att">force</span> の値に <span class="val">strong</span> を使用すると、"run-on" は正書法上ふたつのかたまりであり、ハイフンも語の境目を示すもの、と符号化従事者が考えていることを示す。同様に <span class="att">break</span> の値に <span class="val">yes</span> を使用すると、ふたつの単語の間で改行が行われていることを示す。
                            </td>
                         </tr>
                         <tr>
                            <td>ソフト・ハイフン</td>
-                           <td><pre id="index.xml-eg-w14661409aab7ab2b3b4b6b5b3b1a" class="pre_eg cdata">UTF-8 is a char- acter encoding for Unicode. <a href="#index.xml-eg-w14661409aab7ab2b3b4b6b5b3b1a" class="anchorlink">⚓</a></pre></td>
+                           <td><pre id="index.xml-eg-w14670501aab7ab2b3b4b6b5b3b1a" class="pre_eg cdata">UTF-8 is a char- acter encoding for Unicode. <a href="#index.xml-eg-w14670501aab7ab2b3b4b6b5b3b1a" class="anchorlink">⚓</a></pre></td>
                            <td><code>UTF-8 is a char&lt;pc force="strong"&gt;-&lt;/pc&gt;&lt;lb break="yes"/&gt;acter encoding for Unicode.
                                  </code></td>
                            <td>最初の例で示したように、<span class="att">force</span> の値に <span class="val">weak</span> を使用すると、"character" は正書法上ひとつに綴るべきかたまりであり、ハイフンは単にその語が行をまたいだために分割されていることを示している、と符号化従事者が考えていることを示す。同様に
@@ -330,7 +330,7 @@
                         </tr>
                         <tr>
                            <td>曖昧な事例</td>
-                           <td><pre id="index.xml-eg-w14661409aab7ab2b3b4b6b5b4b1a" class="pre_eg cdata">Some people say TEI is a mark- up language. <a href="#index.xml-eg-w14661409aab7ab2b3b4b6b5b4b1a" class="anchorlink">⚓</a></pre></td>
+                           <td><pre id="index.xml-eg-w14670501aab7ab2b3b4b6b5b4b1a" class="pre_eg cdata">Some people say TEI is a mark- up language. <a href="#index.xml-eg-w14670501aab7ab2b3b4b6b5b4b1a" class="anchorlink">⚓</a></pre></td>
                            <td><code>Some people say TEI is a mark&lt;pc force="inter"&gt;-&lt;/pc&gt;&lt;lb break="maybe"/&gt;up language.
                                  </code></td>
                            <td><span class="att">force</span> の値に <span class="val">inter</span> を使用すると、"mark-up" は正書法上ひとつに綴るべきかたまりなのか、それともふたつの単語なのかについて、符号化従事者が判断を下していないことを示す。同様に
@@ -653,7 +653,7 @@
                   <h3><span class="headingNumber">3.9.3. </span><span class="head"><span class="att">ref</span> and tag URIs</span></h3>
                   <p><span class="att">ref</span> 属性は、<span class="gi">&lt;persName&gt;</span> や <span class="gi">&lt;orgName&gt;</span>、<span class="gi">&lt;author&gt;</span> など、さまざまな要素で使用できる。その値は、要素の内容についての外部メタデータを同定するURIである。図書館のリンクト・データ・アプリケーションを使えば、URIを介して多くの典拠レコードにアクセスが可能なため、曖昧性の解消（典拠コントロール）のためにこの属性を使用できる。例を以下に示す。
                   </p>
-                  <div id="index.xml-egXML-w14661409aab7ab2b9b6b2" class="pre egXML_valid"><span class="element">&lt;placeName <span class="attribute">ref</span>="<span class="attributevalue">http://vocab.getty.edu/page/tgn/7012924</span>"&gt;</span>Indianapolis<span class="element">&lt;/placeName&gt;</span>
+                  <div id="index.xml-egXML-w14670501aab7ab2b9b6b2" class="pre egXML_valid"><span class="element">&lt;placeName <span class="attribute">ref</span>="<span class="attributevalue">http://vocab.getty.edu/page/tgn/7012924</span>"&gt;</span>Indianapolis<span class="element">&lt;/placeName&gt;</span>
                      <span class="element">&lt;author&gt;</span>
                       <span class="element">&lt;persName&gt;</span>Emily Dickinson<span class="element">&lt;/persName&gt;</span>
                       <span class="element">&lt;idno <span class="attribute">type</span>="<span class="attributevalue">VIAF</span>"&gt;</span>http://viaf.org/viaf/31995584<span class="element">&lt;/idno&gt;</span>
@@ -662,8 +662,8 @@
                       <span class="element">&lt;idno <span class="attribute">type</span>="<span class="attributevalue">Wikidata</span>"&gt;</span>https://www.wikidata.org/wiki/Q4441<span class="element">&lt;/idno&gt;</span>
                      <span class="element">&lt;/author&gt;</span></div>
                   <div class="p">しかし、曖昧さ回避のための外部URIが利用できないことも多い。符号化プロジェクトでは、URIフラグメント識別子（<a class="link_ref" href="#uris" title="URI">上記説明</a>を参照のこと）を使用して、同じTEIドキュメント内の典拠レコード（<span class="att">xml:id</span> で特定される）を示すようにすることができる。たとえばテキストの転写において、次のようにしておく。
-                     <div id="index.xml-egXML-w14661409aab7ab2b9b6b3b5" class="pre egXML_valid"><span class="element">&lt;placeName <span class="attribute">ref</span>="<span class="attributevalue">#geo_0034</span>"&gt;</span>Texas<span class="element">&lt;/placeName&gt;</span></div>そして同じドキュメント内の他の場所で統制語彙を用いて定義する。
-                     <div id="index.xml-egXML-w14661409aab7ab2b9b6b3b7" class="pre egXML_valid"><span class="element">&lt;listPlace&gt;</span>
+                     <div id="index.xml-egXML-w14670501aab7ab2b9b6b3b5" class="pre egXML_valid"><span class="element">&lt;placeName <span class="attribute">ref</span>="<span class="attributevalue">#geo_0034</span>"&gt;</span>Texas<span class="element">&lt;/placeName&gt;</span></div>そして同じドキュメント内の他の場所で統制語彙を用いて定義する。
+                     <div id="index.xml-egXML-w14670501aab7ab2b9b6b3b7" class="pre egXML_valid"><span class="element">&lt;listPlace&gt;</span>
                          <span class="element">&lt;place <span class="attribute">xml:id</span>="<span class="attributevalue">geo_0034</span>"&gt;</span>
                           <span class="element">&lt;placeName&gt;</span>
                            <span class="element">&lt;settlement <span class="attribute">type</span>="<span class="attributevalue">village</span>"&gt;</span>Texas<span class="element">&lt;/settlement&gt;</span>
@@ -675,7 +675,7 @@
                   <p>XMLソフトウェアは <code>ref="#geo_0034"</code> に遭遇すると <code>xml:id="geo_0034"</code> がドキュメント内の他の場所に存在することを確認する。
                   </p>
                   <div class="p">複数のドキュメントにまたがって典拠ファイルが必要な場合は、ローカル典拠ファイルを作成するために、絶対URIではなく（上で説明したような）相対URIを <span class="att">ref</span> の値に使用したくなるかもしれない。しかしそのようなURIは、TEIドキュメントの場所が変更されてしまうと、ファイルの場所を見失うという不確実さを持つ。<a class="link_ref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CONARS">P5のセクション 3.5.1「文字列を参照する」</a>と同様に、この <span class="titlem">Best Practices</span> では、ファイルやプロジェクト間で共有できる一意のローカル識別子を作成するために、<a class="link_ref" href="http://www.ietf.org/rfc/rfc4151">IETF RFC 4151</a> で説明されているように、<span class="att">ref</span> 属性を<span class="term">タグURI</span>と共に使用することを勧める。たとえば、2016年に作成されたnabokovpapers.org用のタグURIは次のようになる。
-                     <div id="index.xml-egXML-w14661409aab7ab2b9b6b5c13" class="pre egXML_valid"><span class="element">&lt;persName <span class="attribute">ref</span>="<span class="attributevalue">tag:nabokovpapers.org,2016:B_V001</span>"&gt;</span>Blavdak Vinomori<span class="element">&lt;/persName&gt;</span></div>必要であれば、このようなタグURIを短くするために、<a class="link_ref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SAPU">P5のセクション16.2.3で説明されているように</a>、プライベートURIスキーマを作成することができる。
+                     <div id="index.xml-egXML-w14670501aab7ab2b9b6b5c13" class="pre egXML_valid"><span class="element">&lt;persName <span class="attribute">ref</span>="<span class="attributevalue">tag:nabokovpapers.org,2016:B_V001</span>"&gt;</span>Blavdak Vinomori<span class="element">&lt;/persName&gt;</span></div>必要であれば、このようなタグURIを短くするために、<a class="link_ref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SA.html#SAPU">P5のセクション16.2.3で説明されているように</a>、プライベートURIスキーマを作成することができる。
                   </div>
                </div>
                <div class="====" id="index.xml-body.1_div.3_div.9_div.4">
@@ -686,14 +686,14 @@
                   <p>プロジェクトでテキストオブジェクトの表示を標準化している場合（たとえば、元文書での表示方法に関係なく、すべてのタイトルを斜体にするような場合）、これらの属性を使用する必要はない。代わりにスタイルシートによって、すべてのタイトルを斜体で表示する。</p>
                   <p>一方プロジェクトが元文書の表示方法を忠実に記録している場合は、周囲のテキストとは異なる表示を行うすべての要素、または既定のスタイルシートに従わない表示が行われるすべての要素に対して、これらの属性の1つを使用して表示方法を示す必要がある。</p>
                   <p><span class="att">style</span> 属性の値には、CSS宣言ブロックで有効なCSSプロパティと値のみを使用する。ただし中括弧は使用しない。例えば次のように指定する。
-                  </p><pre id="index.xml-eg-w14661409aab7ab2b9b7b5b2" class="pre_eg cdata">&lt;foreign style="font-style: italic"&gt;<a href="#index.xml-eg-w14661409aab7ab2b9b7b5b2" class="anchorlink">⚓</a></pre><p> </p><pre id="index.xml-eg-w14661409aab7ab2b9b7b5b4" class="pre_eg cdata">&lt;title style="text-decoration: underline; font-size: x-large"&gt;<a href="#index.xml-eg-w14661409aab7ab2b9b7b5b4" class="anchorlink">⚓</a></pre><div class="p">元の文書でのデフォルト表示の記述は、<span class="gi">&lt;teiHeader&gt;</span> の <span class="gi">&lt;rendition&gt;</span> 要素を使用して設定できる。<span class="gi">&lt;rendition&gt;</span> 要素の内容に目的の表示を（CSSとして）指定し、どの要素にそれを適用するかを <span class="att">selector</span> 属性で（CSSセレクタ構文を使用して）指定する。例えば以下の例。
-                     <div id="index.xml-egXML-w14661409aab7ab2b9b7b6b9" class="pre egXML_valid"><span class="element">&lt;rendition <span class="attribute">scheme</span>="<span class="attributevalue">css</span>"
+                  </p><pre id="index.xml-eg-w14670501aab7ab2b9b7b5b2" class="pre_eg cdata">&lt;foreign style="font-style: italic"&gt;<a href="#index.xml-eg-w14670501aab7ab2b9b7b5b2" class="anchorlink">⚓</a></pre><p> </p><pre id="index.xml-eg-w14670501aab7ab2b9b7b5b4" class="pre_eg cdata">&lt;title style="text-decoration: underline; font-size: x-large"&gt;<a href="#index.xml-eg-w14670501aab7ab2b9b7b5b4" class="anchorlink">⚓</a></pre><div class="p">元の文書でのデフォルト表示の記述は、<span class="gi">&lt;teiHeader&gt;</span> の <span class="gi">&lt;rendition&gt;</span> 要素を使用して設定できる。<span class="gi">&lt;rendition&gt;</span> 要素の内容に目的の表示を（CSSとして）指定し、どの要素にそれを適用するかを <span class="att">selector</span> 属性で（CSSセレクタ構文を使用して）指定する。例えば以下の例。
+                     <div id="index.xml-egXML-w14670501aab7ab2b9b7b6b9" class="pre egXML_valid"><span class="element">&lt;rendition <span class="attribute">scheme</span>="<span class="attributevalue">css</span>"
                             <span class="attribute">selector</span>="<span class="attributevalue">div[type='chap']&gt;head</span>"&gt;</span>font-style: italic; font-weight: bold<span class="element">&lt;/rendition&gt;</span>
                         <span class="element">&lt;rendition <span class="attribute">scheme</span>="<span class="attributevalue">css</span>"
                             <span class="attribute">selector</span>="<span class="attributevalue">div[type='sect']&gt;head</span>"&gt;</span>font-style: italic<span class="element">&lt;/rendition&gt;</span></div> 上の例は、元の文書の章の見出しは太字の斜体であり、セクションの見出しは太字ではない斜体であることを示している。
                   </div>
-                  <div class="p">別の方法としては、<span class="att">rendition</span> <em class="font-weight: bold;">属性</em>を使用して内部スキームを指定する。そして <pre id="index.xml-eg-w14661409aab7ab2b9b7b7b5" class="pre_eg cdata">&lt;foreign rendition="#i"&gt;<a href="#index.xml-eg-w14661409aab7ab2b9b7b7b5" class="anchorlink">⚓</a></pre> ヘッダーの <span class="gi">&lt;rendition&gt;</span> <em class="font-weight: bold;">要素</em>にドキュメント化しておく。
-                     <div id="index.xml-egXML-w14661409aab7ab2b9b7b7c11" class="pre egXML_valid"><span class="element">&lt;rendition <span class="attribute">scheme</span>="<span class="attributevalue">css</span>" <span class="attribute">xml:id</span>="<span class="attributevalue">i</span>"&gt;</span>font-style: italic<span class="element">&lt;/rendition&gt;</span></div> <span class="att">rendition</span> 属性と要素の使用は、追加の間接的階層を持ち込むため、XML内のキーストロークの総数を減少させ、それゆえに符号化作業に入力ミスが発生する可能性を減少させる。
+                  <div class="p">別の方法としては、<span class="att">rendition</span> <em class="font-weight: bold;">属性</em>を使用して内部スキームを指定する。そして <pre id="index.xml-eg-w14670501aab7ab2b9b7b7b5" class="pre_eg cdata">&lt;foreign rendition="#i"&gt;<a href="#index.xml-eg-w14670501aab7ab2b9b7b7b5" class="anchorlink">⚓</a></pre> ヘッダーの <span class="gi">&lt;rendition&gt;</span> <em class="font-weight: bold;">要素</em>にドキュメント化しておく。
+                     <div id="index.xml-egXML-w14670501aab7ab2b9b7b7c11" class="pre egXML_valid"><span class="element">&lt;rendition <span class="attribute">scheme</span>="<span class="attributevalue">css</span>" <span class="attribute">xml:id</span>="<span class="attributevalue">i</span>"&gt;</span>font-style: italic<span class="element">&lt;/rendition&gt;</span></div> <span class="att">rendition</span> 属性と要素の使用は、追加の間接的階層を持ち込むため、XML内のキーストロークの総数を減少させ、それゆえに符号化作業に入力ミスが発生する可能性を減少させる。
                   </div>
                   <p>CSS構文では表現できない書式の特徴が元文書に存在する場合は、<span class="att">rendition</span> の代わりに <span class="att">rend</span> 属性を使用するか、ローカル定義のスタイル言語を使用しての表示を提供するために、<span class="att">style</span> を使用することができる。
                   </p>
@@ -786,7 +786,7 @@
                   <p>TEIコミュニティ内部での本来のFRBRに対する継続的な関心により、この <span class="titlem">「ベストプラクティス」</span> では、符号化従事者がTEIドキュメントに関連する書誌的な実体を識別し、それらの間の関係を表現する方法を説明する。たとえば、ある稀覯本の特定の版（FRBRでいう体現形）のテキストがTEIドキュメントに含まれている場合、ヘッダーでこの書籍のすべての現存するコピー（FRBRでいう個別資料）への参照を含めることができる。これらの関連付けと書誌実体への参照は、<span class="gi">&lt;sourceDesc&gt;</span> 要素の省略可能な子要素である <span class="gi">&lt;listRelation&gt;</span> を使用して符号化される。
                   </p>
                   <div class="p">次の例は、FRBRの4つの主要な実体のインスタンス間の、3つの関連をすべて現している。 
-                     <div id="index.xml-egXML-w14661409aab7ab3b4b5b4b1" class="pre egXML_valid"><span class="element">&lt;listRelation&gt;</span>
+                     <div id="index.xml-egXML-w14670501aab7ab3b4b5b4b1" class="pre egXML_valid"><span class="element">&lt;listRelation&gt;</span>
                          <span class="element">&lt;relation <span class="attribute">active</span>="<span class="attributevalue">http://d-nb.info/gnd/4128140-8</span>"
                              <span class="attribute">passive</span>="<span class="attributevalue">http://d-nb.info/gnd/4217850-2</span>"
                              <span class="attribute">ref</span>="<span class="attributevalue">http://purl.org/vocab/frbr/core#realization</span>"/&gt;</span>
@@ -921,13 +921,13 @@
                            <td colspan="4"><span class="gi">&lt;author&gt;</span></td>
                            <td>[推奨] TEIドキュメントの内容に対して主に責任のある実体の名前（通常は元文の書の著者）を、<span class="gi">&lt;author&gt;</span> 要素を1つ以上（名前ごとに1要素）使用して、符号化する。該当する場合は、 <span class="gi">&lt;persName&gt;</span> または <span class="gi">&lt;orgName&gt;</span> を使用する。可能な限り、著者名典拠ファイルでオーソライズされた形式の名前を確立または使用する。例: 
                               <ul>
-                                 <li class="item"><pre id="index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7aa" class="pre_eg cdata">&lt;author&gt;&lt;persName&gt;Shakespeare, William, 1564-1616&lt;/persName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7aa" class="anchorlink">⚓</a></pre></li>
-                                 <li class="item"><pre id="index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7b1a" class="pre_eg cdata">&lt;author&gt;&lt;orgName&gt;National Organization for Women&lt;/orgName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7b1a" class="anchorlink">⚓</a></pre></li>
-                                 <li class="item"><pre id="index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7b2a" class="pre_eg cdata">&lt;author&gt;&lt;orgName&gt;Agreda (Family: Logroño, Spain)&lt;/orgName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7b2a" class="anchorlink">⚓</a></pre></li>
-                                 <li class="item"><pre id="index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7b3a" class="pre_eg cdata">&lt;author&gt;&lt;persName&gt;X, Malcolm&lt;/persName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7b3a" class="anchorlink">⚓</a></pre></li>
-                                 <li class="item"><pre id="index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7b4a" class="pre_eg cdata">&lt;author&gt;&lt;persName&gt;Thomas (Anglo-Norman poet)&lt;/persName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7b4a" class="anchorlink">⚓</a></pre></li>
-                                 <li class="item"><pre id="index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7b5a" class="pre_eg cdata">&lt;author&gt;&lt;persName&gt;Catherine II, Empress of Russia&lt;/persName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7b5a" class="anchorlink">⚓</a></pre></li>
-                                 <li class="item"><pre id="index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7b6a" class="pre_eg cdata">&lt;author&gt;&lt;persName&gt;Joannes, Actuarius, 13th/14th cent.&lt;/persName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14661409aab7ab3b4b8b2b5b4b7b6a" class="anchorlink">⚓</a></pre></li>
+                                 <li class="item"><pre id="index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7aa" class="pre_eg cdata">&lt;author&gt;&lt;persName&gt;Shakespeare, William, 1564-1616&lt;/persName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7aa" class="anchorlink">⚓</a></pre></li>
+                                 <li class="item"><pre id="index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7b1a" class="pre_eg cdata">&lt;author&gt;&lt;orgName&gt;National Organization for Women&lt;/orgName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7b1a" class="anchorlink">⚓</a></pre></li>
+                                 <li class="item"><pre id="index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7b2a" class="pre_eg cdata">&lt;author&gt;&lt;orgName&gt;Agreda (Family: Logroño, Spain)&lt;/orgName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7b2a" class="anchorlink">⚓</a></pre></li>
+                                 <li class="item"><pre id="index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7b3a" class="pre_eg cdata">&lt;author&gt;&lt;persName&gt;X, Malcolm&lt;/persName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7b3a" class="anchorlink">⚓</a></pre></li>
+                                 <li class="item"><pre id="index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7b4a" class="pre_eg cdata">&lt;author&gt;&lt;persName&gt;Thomas (Anglo-Norman poet)&lt;/persName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7b4a" class="anchorlink">⚓</a></pre></li>
+                                 <li class="item"><pre id="index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7b5a" class="pre_eg cdata">&lt;author&gt;&lt;persName&gt;Catherine II, Empress of Russia&lt;/persName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7b5a" class="anchorlink">⚓</a></pre></li>
+                                 <li class="item"><pre id="index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7b6a" class="pre_eg cdata">&lt;author&gt;&lt;persName&gt;Joannes, Actuarius, 13th/14th cent.&lt;/persName&gt;&lt;/author&gt;<a href="#index.xml-eg-w14670501aab7ab3b4b8b2b5b4b7b6a" class="anchorlink">⚓</a></pre></li>
                               </ul>必要に応じて、<span class="gi">&lt;persName&gt;</span> および <span class="gi">&lt;orgName&gt;</span> の <span class="att">ref</span> 属性を使用して、典拠ファイル内のレコードURIを指定する 。
                            </td>
                            <td>
@@ -1686,9 +1686,9 @@
                            <td>[recommended] This element should have one and only one child <span class="gi">&lt;tagUsage&gt;</span> element for describing the encoding of logical divisions, which should be one of the
                               following: 
                               <ul>
-                                 <li class="item"><pre id="index.xml-eg-w14661409aab7ab3b4b8b2c56b4b3aa" class="pre_eg cdata">&lt;tagUsage gi="div1"&gt;Numbered divs used.&lt;/tagUsage&gt;<a href="#index.xml-eg-w14661409aab7ab3b4b8b2c56b4b3aa" class="anchorlink">⚓</a></pre></li>
-                                 <li class="item"><pre id="index.xml-eg-w14661409aab7ab3b4b8b2c56b4b3b1a" class="pre_eg cdata">&lt;tagUsage gi="div"&gt;Unnumbered divs used.&lt;/tagUsage&gt;<a href="#index.xml-eg-w14661409aab7ab3b4b8b2c56b4b3b1a" class="anchorlink">⚓</a></pre></li>
-                                 <li class="item"><pre id="index.xml-eg-w14661409aab7ab3b4b8b2c56b4b3b2a" class="pre_eg cdata">&lt;tagUsage gi="sourceDoc"&gt;Logical divisions not encoded.&lt;/tagUsage&gt;<a href="#index.xml-eg-w14661409aab7ab3b4b8b2c56b4b3b2a" class="anchorlink">⚓</a></pre></li>
+                                 <li class="item"><pre id="index.xml-eg-w14670501aab7ab3b4b8b2c56b4b3aa" class="pre_eg cdata">&lt;tagUsage gi="div1"&gt;Numbered divs used.&lt;/tagUsage&gt;<a href="#index.xml-eg-w14670501aab7ab3b4b8b2c56b4b3aa" class="anchorlink">⚓</a></pre></li>
+                                 <li class="item"><pre id="index.xml-eg-w14670501aab7ab3b4b8b2c56b4b3b1a" class="pre_eg cdata">&lt;tagUsage gi="div"&gt;Unnumbered divs used.&lt;/tagUsage&gt;<a href="#index.xml-eg-w14670501aab7ab3b4b8b2c56b4b3b1a" class="anchorlink">⚓</a></pre></li>
+                                 <li class="item"><pre id="index.xml-eg-w14670501aab7ab3b4b8b2c56b4b3b2a" class="pre_eg cdata">&lt;tagUsage gi="sourceDoc"&gt;Logical divisions not encoded.&lt;/tagUsage&gt;<a href="#index.xml-eg-w14670501aab7ab3b4b8b2c56b4b3b2a" class="anchorlink">⚓</a></pre></li>
                               </ul> Note that the intent of the <span class="gi">&lt;tagUsage&gt;</span> is to explicitly express whether logical divisions and subdivisions are encoded using
                               numbered or unnumbered <span class="gi">&lt;div&gt;</span> elements. Thus the third option (with <span class="val">sourceDoc</span> as the value of <span class="att">gi</span>) is only intended for use at level 1. At levels 2 and above <span class="gi">&lt;sourceDoc&gt;</span> is optional, and the <span class="gi">&lt;tagUsage&gt;</span> should describe the divisions used within the required <span class="gi">&lt;text&gt;</span>.
                            </td>
@@ -1702,9 +1702,9 @@
                            <td>[optional] Use to document classification schemes and controlled vocabularies referenced
                               by a <span class="att">scheme</span> attribute elsewhere in the header or body of the TEI document. For example: 
                               <ul>
-                                 <li class="item"><pre id="index.xml-eg-w14661409aab7ab3b4b8b2c57b3b3aa" class="pre_eg cdata">&lt;taxonomy xml:id="LCC"&gt;&lt;bibl&gt;Library of Congress Classification&lt;/bibl&gt;&lt;/taxonomy&gt;<a href="#index.xml-eg-w14661409aab7ab3b4b8b2c57b3b3aa" class="anchorlink">⚓</a></pre></li>
-                                 <li class="item"><pre id="index.xml-eg-w14661409aab7ab3b4b8b2c57b3b3b1a" class="pre_eg cdata">&lt;taxonomy xml:id="LCSH"&gt;&lt;bibl&gt;Library of Congress Subject Headings&lt;/bibl&gt;&lt;/taxonomy&gt;<a href="#index.xml-eg-w14661409aab7ab3b4b8b2c57b3b3b1a" class="anchorlink">⚓</a></pre></li>
-                                 <li class="item"><pre id="index.xml-eg-w14661409aab7ab3b4b8b2c57b3b3b2a" class="pre_eg cdata">&lt;taxonomy xml:id="AAT"&gt;&lt;bibl&gt;Art &amp;amp; Architecture Theasaurus&lt;/bibl&gt;&lt;/taxonomy&gt;<a href="#index.xml-eg-w14661409aab7ab3b4b8b2c57b3b3b2a" class="anchorlink">⚓</a></pre></li>
+                                 <li class="item"><pre id="index.xml-eg-w14670501aab7ab3b4b8b2c57b3b3aa" class="pre_eg cdata">&lt;taxonomy xml:id="LCC"&gt;&lt;bibl&gt;Library of Congress Classification&lt;/bibl&gt;&lt;/taxonomy&gt;<a href="#index.xml-eg-w14670501aab7ab3b4b8b2c57b3b3aa" class="anchorlink">⚓</a></pre></li>
+                                 <li class="item"><pre id="index.xml-eg-w14670501aab7ab3b4b8b2c57b3b3b1a" class="pre_eg cdata">&lt;taxonomy xml:id="LCSH"&gt;&lt;bibl&gt;Library of Congress Subject Headings&lt;/bibl&gt;&lt;/taxonomy&gt;<a href="#index.xml-eg-w14670501aab7ab3b4b8b2c57b3b3b1a" class="anchorlink">⚓</a></pre></li>
+                                 <li class="item"><pre id="index.xml-eg-w14670501aab7ab3b4b8b2c57b3b3b2a" class="pre_eg cdata">&lt;taxonomy xml:id="AAT"&gt;&lt;bibl&gt;Art &amp;amp; Architecture Theasaurus&lt;/bibl&gt;&lt;/taxonomy&gt;<a href="#index.xml-eg-w14670501aab7ab3b4b8b2c57b3b3b2a" class="anchorlink">⚓</a></pre></li>
                               </ul> The <span class="att">xml:id</span> attribute is required in order to provide an identifier to which <span class="att">scheme</span> attributes in elsewhere in the header refer.
                            </td>
                            <td></td>
@@ -1849,7 +1849,7 @@
                </div>
                <div class="example" id="index.xml-body.1_div.4_div.1_div.9">
                   <h3><span class="headingNumber">4.1.9. </span><span class="head">TEIヘッダーの例</span></h3>
-                  <div id="index.xml-egXML-w14661409aab7ab3b4b9b1" class="pre egXML_valid"><span class="element">&lt;teiHeader <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span>
+                  <div id="index.xml-egXML-w14670501aab7ab3b4b9b1" class="pre egXML_valid"><span class="element">&lt;teiHeader <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span>
                       <span class="element">&lt;fileDesc&gt;</span>
                        <span class="element">&lt;titleStmt&gt;</span>
                         <span class="element">&lt;title <span class="attribute">type</span>="<span class="attributevalue">main</span>"&gt;</span>Lincoln and Seward.<span class="element">&lt;/title&gt;</span>
@@ -2072,9 +2072,9 @@
                   <p>In the examples given in the description of each encoding level below, XML comments
                      are illustrative, and are not meant to be included in encoded documents. Here is an
                      example of such a comment: 
-                  </p><pre id="index.xml-eg-w14661409aab7ab3b6b1b1b1" class="pre_eg cdata">&lt;!-- uncorrected OCR for first page image begins here --&gt;<a href="#index.xml-eg-w14661409aab7ab3b6b1b1b1" class="anchorlink">⚓</a></pre><p>Note that for technical reasons the namespace is not shown in these examples, but
+                  </p><pre id="index.xml-eg-w14670501aab7ab3b6b1b1b1" class="pre_eg cdata">&lt;!-- uncorrected OCR for first page image begins here --&gt;<a href="#index.xml-eg-w14670501aab7ab3b6b1b1b1" class="anchorlink">⚓</a></pre><p>Note that for technical reasons the namespace is not shown in these examples, but
                      it should always be supplied on the root <span class="gi">&lt;TEI&gt;</span> element, e.g.: 
-                  </p><pre id="index.xml-eg-w14661409aab7ab3b6b1b2b3" class="pre_eg cdata">&lt;TEI xmlns="http://www.tei-c.org/ns/1.0"&gt;<a href="#index.xml-eg-w14661409aab7ab3b6b1b2b3" class="anchorlink">⚓</a></pre></div>
+                  </p><pre id="index.xml-eg-w14670501aab7ab3b6b1b2b3" class="pre_eg cdata">&lt;TEI xmlns="http://www.tei-c.org/ns/1.0"&gt;<a href="#index.xml-eg-w14670501aab7ab3b6b1b2b3" class="anchorlink">⚓</a></pre></div>
                <div class="teidiv2" id="level-1-content">
                   <h3><span class="headingNumber">4.2.2. </span><span class="head">レベル 1: 完全に自動化された変換とエンコード</span></h3>
                   <div class="reference" id="index.xml-body.1_div.4_div.2_div.2_div.1">
@@ -2159,7 +2159,7 @@
                      <h4><span class="headingNumber">4.2.2.6. </span><span class="head">レベル 1 の例</span></h4>
                      <div class="example" id="L1AHex">
                         <h5><span class="headingNumber">4.2.2.6.1. </span><span class="head">Level 1 Alger Hiss document</span></h5>
-                        <div id="index.xml-egXML-w14661409aab7ab3b6b3b6b1b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">someid1</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
+                        <div id="index.xml-egXML-w14670501aab7ab3b6b3b6b1b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">someid1</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
                             <span class="element">&lt;teiHeader <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span> &lt;!-- header goes here --&gt;
                             <span class="element">&lt;/teiHeader&gt;</span>
                             <span class="element">&lt;sourceDoc <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span>
@@ -2254,7 +2254,7 @@
                      </div>
                      <div class="example" id="index.xml-body.1_div.4_div.2_div.2_div.6_div.2">
                         <h5><span class="headingNumber">4.2.2.6.2. </span><span class="head">Level 1 Text with OCR Coordinates</span></h5>
-                        <div id="index.xml-egXML-w14661409aab7ab3b6b3b6b2b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">someid1a</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
+                        <div id="index.xml-egXML-w14670501aab7ab3b6b3b6b2b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">someid1a</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
                             <span class="element">&lt;teiHeader <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span> &lt;!-- header goes here --&gt;
                             <span class="element">&lt;/teiHeader&gt;</span>
                             <span class="element">&lt;sourceDoc <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span>
@@ -2506,7 +2506,7 @@
                      <h4><span class="headingNumber">4.2.3.6. </span><span class="head">レベル 2 の例</span></h4>
                      <div class="example" id="index.xml-body.1_div.4_div.2_div.3_div.6_div.1">
                         <h5><span class="headingNumber">4.2.3.6.1. </span><span class="head">Level 2 Basic Structure</span></h5>
-                        <div id="index.xml-egXML-w14661409aab7ab3b6b6b6b1b1" class="pre egXML_valid"><span class="element">&lt;TEI xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
+                        <div id="index.xml-egXML-w14670501aab7ab3b6b6b6b1b1" class="pre egXML_valid"><span class="element">&lt;TEI xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
                             <span class="element">&lt;teiHeader <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span> &lt;!-- header goes here --&gt;
                             <span class="element">&lt;/teiHeader&gt;</span>
                             <span class="element">&lt;sourceDoc&gt;</span> &lt;!-- entire &lt;sourceDoc&gt; is optional, but it might have, for example: --&gt;
@@ -2569,7 +2569,7 @@
                      </div>
                      <div class="example" id="L2AHex">
                         <h5><span class="headingNumber">4.2.3.6.2. </span><span class="head">Level 2 Alger Hiss document</span></h5>
-                        <div id="index.xml-egXML-w14661409aab7ab3b6b6b6b2b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">someid2</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
+                        <div id="index.xml-egXML-w14670501aab7ab3b6b6b6b2b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">someid2</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
                             <span class="element">&lt;teiHeader <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span> &lt;!-- header goes here --&gt;
                             <span class="element">&lt;/teiHeader&gt;</span>
                             <span class="element">&lt;text <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span>
@@ -2854,7 +2854,7 @@
                            </dd>
                         </dl>
                         <div class="p">Here is an example of the encoding of a frontispiece using <span class="gi">&lt;figure&gt;</span>: 
-                           <div id="index.xml-egXML-w14661409aab7ab3b6b9b6b2b2b3" class="pre egXML_valid"><span class="element">&lt;front&gt;</span>
+                           <div id="index.xml-egXML-w14670501aab7ab3b6b9b6b2b2b3" class="pre egXML_valid"><span class="element">&lt;front&gt;</span>
                                <span class="element">&lt;div <span class="attribute">type</span>="<span class="attributevalue">frontispiece</span>"&gt;</span>
                                 <span class="element">&lt;figure&gt;</span>
                                  <span class="element">&lt;head&gt;</span>Sojourner Truth.<span class="element">&lt;/head&gt;</span>
@@ -2894,12 +2894,12 @@
                            the siglum in the text to the note. Encode any siglum within the note using <span class="gi">&lt;label&gt;</span>.
                         </p>
                         <div class="p">Here is an example encoded according to method (a)—first the sigla: 
-                           <div id="index.xml-egXML-w14661409aab7ab3b6b9b6b4b4b1" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>The three little pigs built their houses out of straw,<span class="element">&lt;ref <span class="attribute">target</span>="<span class="attributevalue">#n_a1</span>"&gt;</span>1<span class="element">&lt;/ref&gt;</span>
+                           <div id="index.xml-egXML-w14670501aab7ab3b6b9b6b4b4b1" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>The three little pigs built their houses out of straw,<span class="element">&lt;ref <span class="attribute">target</span>="<span class="attributevalue">#n_a1</span>"&gt;</span>1<span class="element">&lt;/ref&gt;</span>
                                sticks,<span class="element">&lt;ref <span class="attribute">target</span>="<span class="attributevalue">#n_a2</span>"&gt;</span>2<span class="element">&lt;/ref&gt;</span> and bricks.<span class="element">&lt;ref <span class="attribute">target</span>="<span class="attributevalue">#n_a3</span>"&gt;</span>3<span class="element">&lt;/ref&gt;</span>
                               <span class="element">&lt;/p&gt;</span></div> <span class="note" id="Note7"><span class="noteLabel">Note: </span><span class="bibl"><span class="author">Christian</span>. <span class="date">2012</span>. <span class="titlem">How to properly typeset footnotes/superscripts after punctuation marks?</span>. <a class="link_ptr" href="https://tex.stackexchange.com/questions/56063/how-to-properly-typeset-footnotes-superscripts-after-punctuation-marks/56085"><span>https://tex.stackexchange.com/questions/56063/how-to-properly-typeset-footnotes-superscripts-after-punctuation-marks/56085</span></a>.</span></span></div>
                         <p>And then the annotations themselves, encoded as <span class="gi">&lt;note&gt;</span> elements inside a division in the backmatter that holds the endnotes:
                         </p>
-                        <div id="index.xml-egXML-w14661409aab7ab3b6b9b6b4b6" class="pre egXML_valid"><span class="element">&lt;back&gt;</span>
+                        <div id="index.xml-egXML-w14670501aab7ab3b6b9b6b4b6" class="pre egXML_valid"><span class="element">&lt;back&gt;</span>
                             <span class="element">&lt;div <span class="attribute">type</span>="<span class="attributevalue">endnotes</span>"&gt;</span>
                              <span class="element">&lt;head&gt;</span>The Collected End-notes<span class="element">&lt;/head&gt;</span>
                              <span class="element">&lt;note <span class="attribute">anchored</span>="<span class="attributevalue">true</span>" <span class="attribute">place</span>="<span class="attributevalue">bottom</span>"
@@ -2918,7 +2918,7 @@
                            <span class="element">&lt;/back&gt;</span></div>
                         <div class="p">Here is an example encoded according to method (b), with notes encoded right after
                            the point of attachment: 
-                           <div id="index.xml-egXML-w14661409aab7ab3b6b9b6b4b7b1" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>The three little pigs built their houses out of
+                           <div id="index.xml-egXML-w14670501aab7ab3b6b9b6b4b7b1" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>The three little pigs built their houses out of
                                straw,<span class="element">&lt;ref <span class="attribute">target</span>="<span class="attributevalue">#n_b1</span>"&gt;</span>1<span class="element">&lt;/ref&gt;</span>
                                <span class="element">&lt;note <span class="attribute">anchored</span>="<span class="attributevalue">true</span>" <span class="attribute">place</span>="<span class="attributevalue">bottom</span>"
                                    <span class="attribute">xml:id</span>="<span class="attributevalue">n_b1</span>"&gt;</span>
@@ -2942,7 +2942,7 @@
                      <h4><span class="headingNumber">4.2.4.7. </span><span class="head">レベル 3 の例</span></h4>
                      <div class="example" id="index.xml-body.1_div.4_div.2_div.4_div.7_div.1">
                         <h5><span class="headingNumber">4.2.4.7.1. </span><span class="head">Level 3 Basic Structure: Prose</span></h5>
-                        <div id="index.xml-egXML-w14661409aab7ab3b6b9b7b1b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">MBFG0236</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
+                        <div id="index.xml-egXML-w14670501aab7ab3b6b9b7b1b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">MBFG0236</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
                             <span class="element">&lt;teiHeader <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span> &lt;!-- header goes here --&gt;
                             <span class="element">&lt;/teiHeader&gt;</span>
                             <span class="element">&lt;text <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span>
@@ -2971,7 +2971,7 @@
                      </div>
                      <div class="example" id="index.xml-body.1_div.4_div.2_div.4_div.7_div.2">
                         <h5><span class="headingNumber">4.2.4.7.2. </span><span class="head">Level 3 Basic Structure: Verse</span></h5>
-                        <div id="index.xml-egXML-w14661409aab7ab3b6b9b7b2b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">VAA2383</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
+                        <div id="index.xml-egXML-w14670501aab7ab3b6b9b7b2b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">VAA2383</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
                             <span class="element">&lt;teiHeader <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span> &lt;!-- header goes here --&gt;
                             <span class="element">&lt;/teiHeader&gt;</span>
                             <span class="element">&lt;text <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span>
@@ -3007,7 +3007,7 @@
                      </div>
                      <div class="example" id="index.xml-body.1_div.4_div.2_div.4_div.7_div.3">
                         <h5><span class="headingNumber">4.2.4.7.3. </span><span class="head">Level 3 Table of Contents</span></h5>
-                        <div id="index.xml-egXML-w14661409aab7ab3b6b9b7b3b1" class="pre egXML_valid"> &lt;!--target attribute references page break identifier--&gt;
+                        <div id="index.xml-egXML-w14670501aab7ab3b6b9b7b3b1" class="pre egXML_valid"> &lt;!--target attribute references page break identifier--&gt;
                            <span class="element">&lt;div <span class="attribute">type</span>="<span class="attributevalue">contents</span>"&gt;</span>
                             <span class="element">&lt;head&gt;</span>CONTENTS<span class="element">&lt;/head&gt;</span>
                             <span class="element">&lt;list <span class="attribute">type</span>="<span class="attributevalue">simple</span>"&gt;</span>
@@ -3031,7 +3031,7 @@
                      </div>
                      <div class="example" id="index.xml-body.1_div.4_div.2_div.4_div.7_div.4">
                         <h5><span class="headingNumber">4.2.4.7.4. </span><span class="head">Level 3 Chapter with Letter</span></h5>
-                        <div id="index.xml-egXML-w14661409aab7ab3b6b9b7b4b1" class="pre egXML_valid"><span class="element">&lt;div <span class="attribute">type</span>="<span class="attributevalue">chapter</span>"&gt;</span>
+                        <div id="index.xml-egXML-w14670501aab7ab3b6b9b7b4b1" class="pre egXML_valid"><span class="element">&lt;div <span class="attribute">type</span>="<span class="attributevalue">chapter</span>"&gt;</span>
                             <span class="element">&lt;pb <span class="attribute">n</span>="<span class="attributevalue">118</span>" <span class="attribute">xml:id</span>="<span class="attributevalue">VAA2383_126</span>"/&gt;</span>
                             <span class="element">&lt;head <span class="attribute">type</span>="<span class="attributevalue">main</span>"&gt;</span>CHAPTER XIV<span class="element">&lt;/head&gt;</span>
                             <span class="element">&lt;head <span class="attribute">type</span>="<span class="attributevalue">subtitle</span>"&gt;</span>MAURICE LEVY'S CONSTITUTION<span class="element">&lt;/head&gt;</span>
@@ -3074,7 +3074,7 @@
                      </div>
                      <div class="example" id="L3AHex">
                         <h5><span class="headingNumber">4.2.4.7.5. </span><span class="head">Level 3 Alger Hiss document</span></h5>
-                        <div id="index.xml-egXML-w14661409aab7ab3b6b9b7b5b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">someid3</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
+                        <div id="index.xml-egXML-w14670501aab7ab3b6b9b7b5b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">someid3</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
                             <span class="element">&lt;teiHeader <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span> &lt;!-- header goes here --&gt;
                             <span class="element">&lt;/teiHeader&gt;</span>
                             <span class="element">&lt;text <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span>
@@ -3390,7 +3390,7 @@
                               a given text might usefully be encoded in this way.’</span></li>
                         <li class="item">Use <a class="link_ref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-argument.html"><span class="gi">&lt;argument&gt;</span></a> to encode a prefatory list or prose description of the topics usually discovered
                            at the beginning of a chapter. The content within the <span class="gi">&lt;argument&gt;</span> element can be presented as a list or as a paragraph: 
-                           <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b2b2b5" class="pre egXML_valid"><span class="element">&lt;div <span class="attribute">n</span>="<span class="attributevalue">1</span>" <span class="attribute">type</span>="<span class="attributevalue">chapter</span>"&gt;</span>
+                           <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b2b2b5" class="pre egXML_valid"><span class="element">&lt;div <span class="attribute">n</span>="<span class="attributevalue">1</span>" <span class="attribute">type</span>="<span class="attributevalue">chapter</span>"&gt;</span>
                                <span class="element">&lt;pb <span class="attribute">n</span>="<span class="attributevalue">14</span>" <span class="attribute">xml:id</span>="<span class="attributevalue">albert14</span>"/&gt;</span>
                                <span class="element">&lt;head&gt;</span>CHAPTER I.<span class="element">&lt;/head&gt;</span>
                                <span class="element">&lt;head&gt;</span>CHARLOTTE BROOKS.<span class="element">&lt;/head&gt;</span>
@@ -3405,7 +3405,7 @@
                                     Freedmen, Freemen, and Citizens</span>. <span class="pubPlace">New York</span>: <span class="publisher">Hunt &amp; Eaton</span>.</span></span></li>
                         <li class="item">The <a class="link_ref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-trailer.html"><span class="gi">&lt;trailer&gt;</span></a> element is recommended to encode a heading- or title-like content at the end of a
                            textual division: 
-                           <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b2b3b3" class="pre egXML_valid"><span class="element">&lt;body&gt;</span>
+                           <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b2b3b3" class="pre egXML_valid"><span class="element">&lt;body&gt;</span>
                                <span class="element">&lt;head&gt;</span>[book title]<span class="element">&lt;/head&gt;</span>
                                <span class="element">&lt;div <span class="attribute">n</span>="<span class="attributevalue">1</span>" <span class="attribute">type</span>="<span class="attributevalue">chapter</span>"&gt;</span>
                                 <span class="element">&lt;head&gt;</span>[chapter title]<span class="element">&lt;/head&gt;</span>
@@ -3456,14 +3456,14 @@
                               </li>
                               <li class="item">the <a class="link_ref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-choice.html">choice</a> element allows both the apparent error and its editorial correction to be recorded,
                                  as in the following examples: 
-                                 <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b2b6b1b2b3" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>He has no Scruple about Fish; but won't touch a bit of Pork, it being
+                                 <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b2b6b1b2b3" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>He has no Scruple about Fish; but won't touch a bit of Pork, it being
                                     <span class="element">&lt;choice&gt;</span>
                                       <span class="element">&lt;sic&gt;</span>expresly<span class="element">&lt;/sic&gt;</span>
                                       <span class="element">&lt;corr&gt;</span>expressly<span class="element">&lt;/corr&gt;</span>
                                      <span class="element">&lt;/choice&gt;</span> forbidden by their Law.<span class="element">&lt;/p&gt;</span></div> <span class="note" id="Note9"><span class="noteLabel">Note: </span><span class="bibl" id="BIB-TBSoS"><span class="author">Bluett, Thomas</span>. <span class="date">1734</span>. <span class="titlem">Some Memoirs of the Life of Job, the Son of Solomon, the High Priest of Boonda in
                                           Africa; Who was a Slave About Two Years in Maryland; and Afterwards Being Brought
                                           to England, was Set Free, and Sent to His Native Land in the Year 1734</span>. <span class="pubPlace">London</span>: <span class="publisher">n.p.</span>.</span></span> or 
-                                 <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b2b6b1b2b7" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>4. The art of writing she obtained by her own industry and curiosity, and in so
+                                 <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b2b6b1b2b7" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>4. The art of writing she obtained by her own industry and curiosity, and in so
                                     short a time that in the year 1765, when she was not more than twelve years of
                                     <span class="element">&lt;choice&gt;</span>
                                       <span class="element">&lt;sic&gt;</span>age,she<span class="element">&lt;/sic&gt;</span>
@@ -3478,7 +3478,7 @@
                            or part of it) has been added or marked for deletion, or to indicate cases where transcription
                            is difficult (<span class="gi">&lt;unclear&gt;</span>) or impossible (<span class="gi">&lt;gap&gt;</span>) because the material is illegible, invisible, or inaudible (such as while transcribing
                            oral history interviews): 
-                           <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b2b7c13" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>But it is well authenticated by the observation of every one, that <span class="element">&lt;del <span class="attribute">hand</span>="<span class="attributevalue">#JHL</span>"
+                           <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b2b7c13" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>But it is well authenticated by the observation of every one, that <span class="element">&lt;del <span class="attribute">hand</span>="<span class="attributevalue">#JHL</span>"
                                    <span class="attribute">rend</span>="<span class="attributevalue">text-decoration: line-through</span>"&gt;</span>their manner<span class="element">&lt;/del&gt;</span>
                                <span class="element">&lt;add <span class="attribute">hand</span>="<span class="attributevalue">#JHL</span>"
                                    <span class="attribute">rend</span>="<span class="attributevalue">vertical-align: super</span>"&gt;</span>this way—i.e.
@@ -3490,7 +3490,7 @@
                               most disgusting manner, without divisions or heads &amp;amp;amp; in short without a subject
                               (so to
                               speak).<span class="element">&lt;/p&gt;</span></div> <span class="note" id="Note11"><span class="noteLabel">Note: </span><span class="bibl" id="BIB-JHLCC"><span class="author">Lacy, J.H.</span>. <span class="date">[1851]</span>. <span class="titlem">Prejudice Against Composition Writing</span></span></span> 
-                           <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b2b7c17" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>But I still hope for &amp;amp;amp; trust in God and I believe he will animate our brave
+                           <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b2b7c17" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>But I still hope for &amp;amp;amp; trust in God and I believe he will animate our brave
                               defenders with a superhuman power and we will yet drive from our soil the hated invaders
                               whose tread <span class="element">&lt;gap <span class="attribute">reason</span>="<span class="attributevalue">ink blot</span>"/&gt;</span> profanation, but this is an hour to try
                               men's souls—Fort Donelson has been taken by the enemy. Frank was there and covered
@@ -3537,7 +3537,7 @@
                         <ul>
                            <li class="item">Place-name tagging example in main TEI document (the transcription of the source document):
                               
-                              <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b4b5ab1" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>The first Jews arrived in <span class="element">&lt;placeName <span class="attribute">ref</span>="<span class="attributevalue">http://vocab.getty.edu/page/tgn/7012924</span>"&gt;</span>Indianapolis<span class="element">&lt;/placeName&gt;</span>
+                              <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b4b5ab1" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>The first Jews arrived in <span class="element">&lt;placeName <span class="attribute">ref</span>="<span class="attributevalue">http://vocab.getty.edu/page/tgn/7012924</span>"&gt;</span>Indianapolis<span class="element">&lt;/placeName&gt;</span>
                                  in the middle of the 19th century. Primarily immigrants
                                  from <span class="element">&lt;placeName <span class="attribute">ref</span>="<span class="attributevalue">context.xml#tgn_7000084</span>"&gt;</span> Germany<span class="element">&lt;/placeName&gt;</span> and other points in central Europe
                                  (though many had lived elsewhere in the <span class="element">&lt;placeName <span class="attribute">ref</span>="<span class="attributevalue">http://vocab.getty.edu/page/tgn/7012149</span>"&gt;</span>United States<span class="element">&lt;/placeName&gt;</span>
@@ -3548,7 +3548,7 @@
                            </li>
                            <li class="item">Personal and organizational name tagging example in main TEI document (the transcription
                               of the source document): 
-                              <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b4b5b1b1" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>PRIZE LIBRARY GIFT-Indiana University President
+                              <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b4b5b1b1" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>PRIZE LIBRARY GIFT-Indiana University President
                                  <span class="element">&lt;persName <span class="attribute">ref</span>="<span class="attributevalue">http://id.loc.gov/authorities/names/n82134365.html</span>"&gt;</span>Elvis J.
                                     Stahr<span class="element">&lt;/persName&gt;</span> (right), a former law dean and
                                  practicing attorney, reminisces with Professor of Law
@@ -3570,7 +3570,7 @@
                         <div class="p">Personal letters are a common example of an embedded text. While a collection of letters
                            would use a textual division for each letter, if a letter is quoted as part of a larger
                            text, use <span class="gi">&lt;floatingText&gt;</span><span class="gi">&lt;body&gt;</span><span class="tag">&lt;div1 type="letter"&gt;</span> (or <span class="gi">&lt;floatingText&gt;</span><span class="gi">&lt;body&gt;</span><span class="tag">&lt;div type="letter"&gt;</span> if using unnumbered textual divisions) with <a class="link_ref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-opener.html"><span class="gi">&lt;opener&gt;</span></a>, <a class="link_ref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-dateline.html"><span class="gi">&lt;dateline&gt;</span></a>, <a class="link_ref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-salute.html"><span class="gi">&lt;salute&gt;</span></a>, <a class="link_ref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-signed.html"><span class="gi">&lt;signed&gt;</span></a>, <a class="link_ref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-closer.html"><span class="gi">&lt;closer&gt;</span></a>, <a class="link_ref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-postscript.html"><span class="gi">&lt;postscript&gt;</span></a> included as appropriate. For example: 
-                           <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b5b2c21" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>She opened and read as follows:<span class="element">&lt;/p&gt;</span>
+                           <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b5b2c21" class="pre egXML_valid"><span class="element">&lt;p&gt;</span>She opened and read as follows:<span class="element">&lt;/p&gt;</span>
                               <span class="element">&lt;floatingText&gt;</span>
                                <span class="element">&lt;body&gt;</span>
                                 <span class="element">&lt;div1 <span class="attribute">type</span>="<span class="attributevalue">letter</span>"&gt;</span>
@@ -3600,7 +3600,7 @@
                         <p>Within the front matter (<span class="gi">&lt;front&gt;</span>) of a performance text, cast lists should be encoded as <span class="gi">&lt;castList&gt;</span>s, with each item in that list encoded as a <span class="gi">&lt;castItem&gt;</span>. If desired, each <span class="gi">&lt;castItem&gt;</span> may be uniquely identified with an <span class="att">xml:id</span> attribute.
                         </p>
                         <div class="p">For example, 
-                           <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b6b2b1" class="pre egXML_valid"><span class="element">&lt;front&gt;</span>
+                           <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b6b2b1" class="pre egXML_valid"><span class="element">&lt;front&gt;</span>
                                <span class="element">&lt;castList&gt;</span>
                                 <span class="element">&lt;head&gt;</span>Dramatis Personae<span class="element">&lt;/head&gt;</span>
                                 <span class="element">&lt;castItem <span class="attribute">xml:id</span>="<span class="attributevalue">kllear</span>"&gt;</span>LEAR king of Britain<span class="element">&lt;/castItem&gt;</span>
@@ -3626,7 +3626,7 @@
                            </li>
                            <li class="item">If it is desired to tie the speaker(s) of a speech to a particular persona in the
                               cast list, the <span class="att">who</span> attribute of <span class="gi">&lt;sp&gt;</span> may be used to refer to the <span class="gi">&lt;castItem&gt;</span> of the speaker. When <span class="att">who</span> is used, <span class="gi">&lt;speaker&gt;</span> is optional. 
-                              <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b6b3b1b3c11" class="pre egXML_valid"><span class="element">&lt;div <span class="attribute">n</span>="<span class="attributevalue">1</span>" <span class="attribute">type</span>="<span class="attributevalue">act</span>"&gt;</span>
+                              <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b6b3b1b3c11" class="pre egXML_valid"><span class="element">&lt;div <span class="attribute">n</span>="<span class="attributevalue">1</span>" <span class="attribute">type</span>="<span class="attributevalue">act</span>"&gt;</span>
                                   <span class="element">&lt;head&gt;</span>Act 1<span class="element">&lt;/head&gt;</span>
                                   <span class="element">&lt;div <span class="attribute">n</span>="<span class="attributevalue">1</span>" <span class="attribute">type</span>="<span class="attributevalue">scene</span>"&gt;</span>
                                    <span class="element">&lt;head&gt;</span>Scene 1<span class="element">&lt;/head&gt;</span>
@@ -3677,7 +3677,7 @@
                            </li>
                            <li class="item">both.</li>
                         </ul>
-                        <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b7b5" class="pre egXML_valid"><span class="element">&lt;list <span class="attribute">type</span>="<span class="attributevalue">simple</span>"&gt;</span>
+                        <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b7b5" class="pre egXML_valid"><span class="element">&lt;list <span class="attribute">type</span>="<span class="attributevalue">simple</span>"&gt;</span>
                             <span class="element">&lt;head&gt;</span>Interview Participants<span class="element">&lt;/head&gt;</span>
                             <span class="element">&lt;item&gt;</span>
                              <span class="element">&lt;persName <span class="attribute">ref</span>="<span class="attributevalue">tag:docsouth.unc.edu,2016:wf</span>"
@@ -3708,7 +3708,7 @@
                               hearing, along with the president of the student body, and some others.<span class="element">&lt;/p&gt;</span>
                            <span class="element">&lt;/sp&gt;</span></div>
                         <div class="p">One way to synchronize audio and transcript has been introduced in <a class="link_ref" href="http://docsouth.unc.edu/sohp/">Oral Histories of the American South</a>, using <a class="link_ref" href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-milestone.html"><span class="gi">&lt;milestone&gt;</span></a> with a <span class="att">timestamp</span> attribute: 
-                           <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b7b6b7" class="pre egXML_valid"><span class="element">&lt;milestone <span class="attribute">n</span>="<span class="attributevalue">7248</span>" <span class="attribute">timestamp</span>="<span class="attributevalue">00:08:54</span>"
+                           <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b7b6b7" class="pre egXML_valid"><span class="element">&lt;milestone <span class="attribute">n</span>="<span class="attributevalue">7248</span>" <span class="attribute">timestamp</span>="<span class="attributevalue">00:08:54</span>"
                                   <span class="attribute">type</span>="<span class="attributevalue">stop</span>" <span class="attribute">unit</span>="<span class="attributevalue">empty</span>"/&gt;</span></div>
                         </div>
                      </div>
@@ -3717,7 +3717,7 @@
                         <p>Use <span class="gi">&lt;lg&gt;</span> and <span class="gi">&lt;l&gt;</span> as in Level 3. In addition, use the <span class="att">style</span>, <span class="att">rendition</span>, or <span class="att">rend</span> attribute to indicate lines that are indented.
                         </p>
                         <div class="p">For example, 
-                           <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b8b2b1" class="pre egXML_valid"><span class="element">&lt;div <span class="attribute">n</span>="<span class="attributevalue">1</span>" <span class="attribute">type</span>="<span class="attributevalue">fit</span>"&gt;</span>
+                           <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b8b2b1" class="pre egXML_valid"><span class="element">&lt;div <span class="attribute">n</span>="<span class="attributevalue">1</span>" <span class="attribute">type</span>="<span class="attributevalue">fit</span>"&gt;</span>
                                <span class="element">&lt;head&gt;</span>Fit the First: THE LANDING<span class="element">&lt;/head&gt;</span>
                                <span class="element">&lt;lg <span class="attribute">n</span>="<span class="attributevalue">1</span>" <span class="attribute">type</span>="<span class="attributevalue">stanza</span>"&gt;</span>
                                 <span class="element">&lt;l <span class="attribute">n</span>="<span class="attributevalue">1.1</span>"&gt;</span>"Just the place for a Snark!" the Bellman cried,<span class="element">&lt;/l&gt;</span>
@@ -3740,7 +3740,7 @@
                         <div class="p">To mark typographic elements that indicate a structural break or boundary use <span class="tag">&lt;ab type="typography"&gt;</span>. The content of this element is the character(s) or device used to mark the division
                            in the source document. The <span class="att">style</span> attribute may be used to indicate how the separator is rendered. As a content-bearing
                            element, <span class="gi">&lt;ab&gt;</span> is recommended over the empty elements <span class="gi">&lt;milestone&gt;</span> or <span class="gi">&lt;space&gt;</span>, as it can contain further markup and glyph information. For example: 
-                           <div id="index.xml-egXML-w14661409aab7ab3b6c12b6b9b1c11" class="pre egXML_valid"><span class="element">&lt;ab <span class="attribute">style</span>="<span class="attributevalue">text-align: center</span>"
+                           <div id="index.xml-egXML-w14670501aab7ab3b6c12b6b9b1c11" class="pre egXML_valid"><span class="element">&lt;ab <span class="attribute">style</span>="<span class="attributevalue">text-align: center</span>"
                                   <span class="attribute">type</span>="<span class="attributevalue">typography</span>"&gt;</span>*****<span class="element">&lt;/ab&gt;</span></div>
                         </div>
                         <p>Like <span class="gi">&lt;pb&gt;</span> elements, these should always be placed within the lowest-level text division.
@@ -3748,7 +3748,7 @@
                      </div>
                      <div class="subsection" id="L4AHex">
                         <h5><span class="headingNumber">4.2.5.6.8. </span><span class="head">Level 4 Alger Hiss document</span></h5>
-                        <div id="index.xml-egXML-w14661409aab7ab3b6c12b6c10b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">project_document_identifier</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
+                        <div id="index.xml-egXML-w14670501aab7ab3b6c12b6c10b1" class="pre egXML_valid"><span class="element">&lt;TEI <span class="attribute">xml:id</span>="<span class="attributevalue">project_document_identifier</span>" xmlns="http://www.tei-c.org/ns/1.0"&gt;</span>
                             <span class="element">&lt;teiHeader <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span> &lt;!-- header goes here --&gt;
                             <span class="element">&lt;/teiHeader&gt;</span>
                             <span class="element">&lt;text <span class="attribute">xml:lang</span>="<span class="attributevalue">en</span>"&gt;</span>
@@ -4143,11 +4143,11 @@
          <div class="footer">
             <!--standard links to project, institution etc--><a class="plain" href="/">Home</a> 
          </div>
-         <address>TEI SIG on Libraries. Date: 2018-09-08<br/>
+         <address>TEI SIG on Libraries. Date: --. 日本語訳: 村並秀昭. 最終更新日: 2023-01-29. <a href="https://creativecommons.org/licenses/by/3.0/deed.ja">CC BY 3.0</a><br/>
             <!--
 	  Generated from index.xml using XSLT stylesheets version 7.54.0
 	       based on http://www.tei-c.org/Stylesheets/
-	       on 2023-01-29T10:22:15Z.
+	       on 2023-01-29T12:05:41Z.
 	       SAXON HE 9.8.0.15.
 		 --></address>
       </div>
